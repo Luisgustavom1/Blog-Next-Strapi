@@ -8,6 +8,8 @@ import PostCover from '../../components/PostCover';
 import PostDetails from '../../components/PostDetails';
 import PostContainer from '../../components/PostContainer';
 import Comments from '../../Comments';
+import Head from 'next/head';
+import { SITE_NAME } from '../../config/app-config';
 
 type PostProps = {
   post: PostData;
@@ -16,6 +18,12 @@ type PostProps = {
 const Post = ({ post }: PostProps): JSX.Element => {
   return (
     <>
+      <Head>
+        <title>
+          {post.title} - {SITE_NAME}
+        </title>
+        <meta name="description" content={`Post ${post.title}`} />
+      </Head>
       <Header />
 
       <MainContainer>
