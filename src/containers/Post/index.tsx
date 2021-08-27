@@ -7,7 +7,7 @@ import Heading from '../../components/Heading';
 import PostCover from '../../components/PostCover';
 import PostDetails from '../../components/PostDetails';
 import PostContainer from '../../components/PostContainer';
-import Comments from '../../Comments';
+import Comments from '../../components/Comments';
 import Head from 'next/head';
 import { SITE_NAME } from '../../config/app-config';
 

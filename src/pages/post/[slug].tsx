@@ -35,7 +35,6 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
   const post = await getPost(ctx.params.slug);
-
   return {
     props: {
       post: post[0],

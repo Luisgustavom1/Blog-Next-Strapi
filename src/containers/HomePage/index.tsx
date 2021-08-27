@@ -13,7 +13,6 @@ type HomePageProps = {
 };
 
 export default function HomePage({ posts, category }: HomePageProps) {
-  console.log(posts);
   return (
     <>
       <Head>
